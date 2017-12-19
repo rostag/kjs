@@ -1,0 +1,7 @@
+<h1>Top GitHub Users for Chere</h1>
+
+<mat-card *ngFor="let user of users | async" class="user-card">
+    <h2>{{user.login}}</h2>
+    <img mat-card-image src="{{user.avatar_url}}" alt="{{user.login}}" class="avatar-user">
+    <h3>Links: <a href="{{user.repos_url}}">Repos</a> and <a href="{{user.gists_url}}">Gists</a></h3>
+</mat-card>
